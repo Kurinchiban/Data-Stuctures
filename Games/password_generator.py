@@ -9,17 +9,16 @@ numbers="0123456789"
 symbols="[]{}()!@#$%^&*_-=+><?/.,';:"
 
 all=""
-upper,lower,number,symbol= True,True,True,True
 
-if upper:
+if upper_letters:
     all+=upper_letters 
-if lower:
+if lower_letters:
     all+=lower_letters 
-if number:
+if numbers:
     all+=numbers
-if symbol:
+if symbols:
     all+=symbols 
-
+    
 length=1 
 for i in range(length):
     password="".join(random.sample(all,10))
