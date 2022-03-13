@@ -4,10 +4,23 @@ import random
 def P1():
     list_1=["R","P","S"]
     computer=random.choice(list_1)
-    print("Computer chooses : {} ".format(computer))
+    if computer=="R":
+        print("Computer chooses : Rock")
+    
+    elif computer=="P":
+        print("Computer chooses : Paper")
+    else:
+        print("Computer chooses : Scissors")
     return computer
 def P2():
     player=input("Enter Rock Paper or Scissors as R/P/S : ").upper()
+    if player=="R":
+        print("Player chooses : Rock")
+    
+    elif player=="P":
+        print("Player chooses : Paper")
+    else:
+        print("Player chooses : Scissors")
     return player
 
 def root(player,computer):
