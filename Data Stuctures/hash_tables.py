@@ -1,6 +1,7 @@
 # creating the hash class 
 class HashTable:
     # SOME CHANGES
+    # SOME MORE CHanges
     def __init__(self,size=7):
         self.data_map=[None]*7 
 
